@@ -20,8 +20,5 @@ The objective of this project is to build a binary classification model that pre
 
 ## 📁 Repository Structure
 ```text
-├── data/                  # Weather dataset files
-├── notebooks/             # Exploratory Data Analysis & Model Training notebooks
-├── src/                   # Helper scripts and ML pipeline functions
-├── .gitignore             # Standard Python gitignore configuration
+├── Final project1.ipynb   # Main Jupyter Notebook containing EDA, preprocessing, and ML models
 └── README.md              # Project documentation
