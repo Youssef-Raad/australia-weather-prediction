@@ -20,5 +20,5 @@ The objective of this project is to build a binary classification model that pre
 
 ## 📁 Repository Structure
 ```text
-├── Final project1.ipynb   # Main Jupyter Notebook containing EDA, preprocessing, and ML models
-└── README.md              # Project documentation
+├── australia-weather-prediction-nodel.ipynb   # Main Jupyter Notebook containing EDA, preprocessing, and ML models
+└── README.md                                  # Project documentation
