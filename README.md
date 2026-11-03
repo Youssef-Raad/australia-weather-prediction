@@ -1,24 +1,35 @@
-# Australia Weather & Rain Prediction
+# 🌧️ Rainfall Prediction in Australia using Machine Learning
 
-A machine learning project designed to predict daily rainfall in Australia using historical weather data. The project covers data preprocessing, feature engineering, handling class imbalance, hyperparameter tuning, and model evaluation using `scikit-learn`.
-
----
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📌 Project Overview
-The objective of this project is to build a binary classification model that predicts whether it will rain tomorrow (`RainTomorrow`: Yes/No) based on various atmospheric and meteorological measurements (such as humidity, pressure, temperature, and wind speed).
+Predicting whether it will rain tomorrow is a critical classification task in meteorology. This project utilizes open-source daily weather observation data from the Australian Bureau of Meteorology to build and evaluate predictive machine learning models. 
+
+By comparing **Random Forest Classifier** and **Logistic Regression**, this analysis highlights the performance trade-offs between overall accuracy, precision, and True Positive Rate (Recall) when handling imbalanced weather datasets.
+
+Developed as part of practical machine learning coursework with **IBM**.
 
 ---
 
-## 🛠️ Key Steps & Methodology
-* **Data Cleaning & Preprocessing:** Handled missing values, encoded categorical attributes, and scaled numerical features.
-* **Feature Engineering:** Extracted seasonal components from dates, renamed features for clarity, and addressed correlated features.
-* **Class Imbalance Management:** Implemented techniques to balance target classes for better real-world prediction accuracy.
-* **Model Training & Hyperparameter Tuning:** Trained classification algorithms (including Random Forest) and tuned parameters using `GridSearchCV`.
-* **Evaluation:** Evaluated performance using accuracy, precision, recall, F1-score, and confusion matrices.
+## 📊 Dataset Overview
+The dataset contains daily weather observations from across Australia over multiple years, including parameters such as:
+* **Temperature:** Minimum and maximum daily temperatures (`MinTemp`, `MaxTemp`).
+* **Humidity & Pressure:** Morning and afternoon measurements (`Humidity9am`, `Humidity3pm`, `Pressure9am`, `Pressure3pm`).
+* **Wind:** Gust speed and direction (`WindGustSpeed`, `WindDir9am`, `WindDir3pm`).
+* **Precipitation:** Today's rainfall amount (`Rainfall`) and binary indicators (`RainToday`, `RainTomorrow`).
+
+**Target Variable:** `RainTomorrow` (Binary: `Yes` / `No`)
 
 ---
 
-## 📁 Repository Structure
-```text
-├── australia-weather-prediction-nodel.ipynb   # Main Jupyter Notebook containing EDA, preprocessing, and ML models
-└── README.md                                  # Project documentation
+## 🛠️ Tech Stack & Dependencies
+* **Programming Language:** Python
+* **Data Processing & Analysis:** `pandas`, `numpy`
+* **Data Visualization:** `matplotlib`, `seaborn`
+* **Machine Learning:** `scikit-learn`
+
+To install the required dependencies:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
